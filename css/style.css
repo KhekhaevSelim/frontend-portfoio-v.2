@@ -253,6 +253,7 @@ margin-bottom: 4rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    max-height: 300px;
 }
 
 .portfolio-layer{
