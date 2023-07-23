@@ -206,6 +206,7 @@ text-align: center;
 border: .2rem solid var(--bg-color);
 transition: .5s ease;
 margin: 10px;
+min-height: 328px;
 }
 
 .services-container .services-box:hover{
