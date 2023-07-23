@@ -195,7 +195,6 @@ margin-bottom: 5rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
 }
 
 .services-container .services-box{
@@ -206,6 +205,7 @@ border-radius: 2rem;
 text-align: center;
 border: .2rem solid var(--bg-color);
 transition: .5s ease;
+margin: 10px;
 }
 
 .services-container .services-box:hover{
