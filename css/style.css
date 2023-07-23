@@ -80,9 +80,11 @@ transition: 300ms;
 }
 
 .home-img img{
-    width: 35vw;
-    border-radius: 20px;
+    width: 28vw;
+    height: 600px;
     animation: floatImage 3s ease-in-out infinite;
+    object-fit: contain;
+    
 }
 
 @keyframes floatImage {
