@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pangolin", cursive, sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color : #1f242d;
+    --second-bg-color : #323946;
+    --text-color : #fff;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: linear-gradient(to top right, rgb(84, 130, 161) , rgb(58, 53, 53));
+    color : var(--text-color);
+    min-height: 100vh;
+}
+
+section{
+    min-height: 100vh;
+    padding: 15rem 9% 7rem;
+}
+
+.header{
+    position: fixed;
+    top : 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.headerTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoPass{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.logoActive{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#back-icon{
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#back-icon:hover{
+  transform: rotate(180deg);
+  /* color: var(--text-color); */
+}
+.header span{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+#landing-icon{
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-left: 20px;
+}
+#icon{
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-left: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px var(--main-color);
+    border-left: solid 1px var(--main-color);
+    border-right: solid 1px var(--text-color);
+    border-bottom: solid 1px var(--text-color);
+    border-radius: 8px;
+    padding: 2rem 2rem 4rem 2rem;
+    background: linear-gradient(to top right, rgb(58, 53, 53), rgb(84, 130, 161) );
+}
+.contentTitle {
+    width: 100%;
+}
+.contentTitle ul li {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.contentTitle ul li img{
+   width: 50px;
+   height: 50px;
+   /* filter: invert(100%); */
+   margin-right: 20px;
+}
+.itemsContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.item{
+    border-top: solid 1px var(--text-color);
+    border-left: solid 1px var(--text-color);
+    border-right: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.item img{
+    width: 240px;
+    height: 250px;
+}
+
+@media screen and (max-width : 685px) {
+    .itemsContainer{
+        justify-content: center;
+    }
+    .header span {
+        display: none;
+    }
+    .item img {
+        width: 220px;
+        height: 220px;
+    }
+    .contentTitle ul li {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contentTitle ul li img{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
