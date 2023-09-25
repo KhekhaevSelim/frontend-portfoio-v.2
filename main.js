@@ -1,3 +1,6 @@
+
+document.addEventListener("DOMContentLoaded", ()=> {
+
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
@@ -35,3 +38,22 @@ ScrollReveal().reveal('.home-content, .heading ' ,{ origin: "top" });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contacts form ' ,{ origin: "bottom" });
 ScrollReveal().reveal('.home-content h1, .about-img' ,{ origin: "left" });
 ScrollReveal().reveal('.home-content p, .about-content' ,{ origin: "right" });
+
+  (function() {
+    emailjs.init("amNdU8B1Qo7Qcra01");
+  })();
+  window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm("service_6hh8j5n", "template_8xc9dn7", this)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          window.location.reload();
+        }, function(error) {
+          alert('FAILED...', error);
+          
+        });
+    });
+  }
+})
+
