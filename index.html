@@ -127,7 +127,7 @@
                 <img src="assets/images/redactor.jpg" class="project-img" alt="redactor" loading="lazy">
                 <div class="portfolio-layer">
                     <h4>Text redactor</h4>
-                    <p>Приложение для редактирования текста</p>
+                    <p>Приложение для редактирования текста(личный проект)</p>
                     <a href="projects/textRedacrot.html"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -137,16 +137,12 @@
     <section class="contacts" id="contacts">
         <h2 class="heading">Свяжитесь со <span>мной!</span></h2>
 
-        <form action="#">
+        <form action="#" id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Ваше Имя">
-                <input type="text" placeholder="Ваш Email">
+                <input type="text" placeholder="Ваше Имя" name="name">
+                <input type="text" placeholder="Ваш Email" name="email">
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Мобильный телефон">
-                <input type="text" placeholder="Ваш Email">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение" ></textarea>
             <input type="submit" value="отправить сообщение" class="btn">
         </form>
     </section>
@@ -159,6 +155,7 @@
            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a> 
         </div>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
 </body>
