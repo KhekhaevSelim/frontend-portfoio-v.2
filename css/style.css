@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'custom';
-    src: url("/assets/font/Bahnschrift.ttf") format('truetype');
+    src: url("../assets/font/Bahnschrift.ttf") format('truetype');
 }
 
 *{
