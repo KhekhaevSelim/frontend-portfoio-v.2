@@ -50,6 +50,9 @@ canvas {
 section{
     min-height: 100vh;
     padding: 15rem 9% 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
@@ -102,39 +105,94 @@ section{
     color: var(--main-color);
     font-weight: 600;
 }
-#icon{
-    font-size: 5rem;
-    color: var(--main-color);
-    margin-left: 20px;
+
+.projectIcon{
+    width: 130px;
+    height: 34px;
+    margin: 0 0 0 15px;
 }
 
-ul li{
-    font-size: 1.8rem;
-    margin: 2rem 0 3rem;
-    list-style: none;
-    border: none;
-    background: linear-gradient(45deg,var(--bg-color), transparent, var(--bg-color));
-    color : var(--text-color);
-    padding: 10px 15px;
-    border-radius: 8px;
-    border-top: solid 1px var(--text-color);
-    border-left: solid 1px var(--text-color);
-    border-right: solid 1px var(--main-color);
-    border-bottom: solid 1px var(--main-color);
+.wrapper{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.imagesContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.imageBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.projectImage{
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+.arrowBack2, .arrowBack3{
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    transform: rotate(180deg);
+    position: absolute;
+    left: -40px;
 }
-ul li:hover{
-    border-top: solid 1px var(--main-color);
-    border-left: solid 1px var(--main-color);
-    border-right: solid 1px var(--text-color);
-    border-bottom: solid 1px var(--text-color);
+.arrowNext1, .arrowNext2 {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: -40px;
 }
-ul li a{
+.arrowNext1:hover,.arrowNext2:hover, .arrowBack2:hover , .arrowBack3:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 238, 255, 0.349);
+}
+
+.description{
+    font-size: 18px;
+    color : var(--text-color);
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.description a {
+    text-decoration: none;
     color : var(--main-color);
 }
+.stack{
+    margin: 30px 0 0 0;
+    font-size: 18px;
+    color : var(--text-color);
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
 
-@media screen and (max-width : 685px) {
-    .header span {
-        display: none;
-    }
+.myRole{
+    margin: 30px 0 0 0;
+    font-size: 18px;
+    color : var(--text-color);
+    display: block;
+    width: 100%;
+}
+.myRole a {
+    text-decoration: none;
+    color : var(--main-color);
+    display: inline-block;
 }

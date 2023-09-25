@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@font-face {
+    font-family: 'custom';
+    src: url("/assets/font/Bahnschrift.ttf") format('truetype');
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Pangolin", cursive, sans-serif;
+    font-family: 'custom';
+    font-variation-settings: 'wght' 400 , 'wdth' 88;
     text-decoration: none;
     border: none;
     outline: none;
@@ -30,7 +34,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 9% 15rem;
 }
 
 .header{
@@ -44,6 +48,9 @@ section{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    -webkit-box-shadow: 0px -5px 5px -3px rgba(79, 135, 178, 0.27) inset;
+-moz-box-shadow: 0px -5px 5px -3px rgba(79, 135, 178, 0.27) inset;
+box-shadow: 0px -5px 5px -3px rgba(79, 135, 178, 0.27) inset;
 }
 
 .header.sticky{
@@ -117,7 +124,7 @@ span{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .social-media a{
@@ -184,7 +191,7 @@ margin: 3rem 1.5rem 3rem 0;
 }
 
 .about-content p{   
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 2rem 0 3rem;
 }
 
@@ -200,15 +207,19 @@ margin-bottom: 5rem;
 }
 
 .services-container .services-box{
-flex: 1 1 30rem;
-background: var(--second-bg-color);
-padding: 3rem 2rem 4rem;
-border-radius: 2rem;
-text-align: center;
-border: .2rem solid var(--bg-color);
-transition: .5s ease;
-margin: 10px;
-min-height: 328px;
+    flex: 1 1 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition: .5s ease;
+    margin: 10px;
+    min-height: 328px;
 }
 
 .services-container .services-box:hover{
@@ -225,7 +236,7 @@ min-height: 328px;
 }
 
 .services-box p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 1rem 0 3rem;
 }
 
@@ -265,7 +276,7 @@ margin-bottom: 4rem;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, 0.377), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,11 +291,14 @@ margin-bottom: 4rem;
 }
 .portfolio-layer h4{
     font-size : 3rem; 
+    font-weight: bold;
 }
 
 .portfolio-layer p{
-    font-size : 1.6rem; 
+    font-size: 2.2rem;
     margin: .3rem 0 1rem;
+    color : white;
+    font-weight: bold;
 }
 
 .portfolio-layer a{
@@ -318,7 +332,7 @@ margin-bottom: 4rem;
 textarea{
    width: 100%;
    padding: 1.5rem;
-   font-size: 1.6rem;
+   font-size: 1.8rem;
    color: var(--text-color);
    background: var(--second-bg-color);
    border-radius: .8rem;
